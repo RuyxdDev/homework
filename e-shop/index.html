@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body class="body">
+  <body class="body body--opened-menu">
     <div class="wrapper">
       <header class="header">
         <div class="header__top">
@@ -18,28 +18,26 @@
                   <img src="./img/logos/logo.svg" alt="logo" />
                 </a>
               </div>
-              <ul class="header__menu">
-                <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">
-                    <span>All products</span>
-                  </a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">
-                    <span>Solutions</span>
-                  </a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">
-                    <span>About</span>
-                  </a>
-                </li>
-                <li class="header__menu-item">
-                  <a href="#" class="header__menu-link">
-                    <span>Support</span>
-                  </a>
-                </li>
-              </ul>
+              <nav class="nav">
+                <ul class="header__menu">
+                  <li class="header__menu-item">
+                    <a href="#products" class="header__menu-link">
+                      All products
+                    </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#categories" class="header__menu-link">
+                      Solutions
+                    </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#about" class="header__menu-link"> About </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#support" class="header__menu-link"> Support </a>
+                  </li>
+                </ul>
+              </nav>
               <div class="header__search">
                 <ul class="header__search-list">
                   <li class="header__search-item">
@@ -54,6 +52,9 @@
                   </li>
                 </ul>
               </div>
+              <a href="#" class="burger-icon">
+                <span></span>
+              </a>
             </div>
           </div>
         </div>
@@ -130,7 +131,7 @@
         </section>
       </header>
       <main class="main">
-        <section class="main__categories categories">
+        <section class="main__categories categories" id="categories">
           <div class="container">
             <div class="categories__inner">
               <div class="categories__info">
@@ -201,7 +202,7 @@
             </div>
           </div>
         </section>
-        <section class="main__products products">
+        <section class="main__products products" id="products">
           <div class="container">
             <div class="products__inner">
               <div class="products__info">
@@ -463,16 +464,16 @@
                 <h6 class="footer__menu-title">All products</h6>
                 <ul class="footer__menu-list">
                   <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">Phones</a>
+                    <a href="#products" class="footer__menu-link">Phones</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">Watch</a>
+                    <a href="#products" class="footer__menu-link">Watch</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">Tablet</a>
+                    <a href="#products" class="footer__menu-link">Tablet</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">Laptops</a>
+                    <a href="#products" class="footer__menu-link">Laptops</a>
                   </li>
                 </ul>
               </div>
@@ -480,10 +481,10 @@
                 <h6 class="footer__menu-title">Company</h6>
                 <ul class="footer__menu-list">
                   <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">About</a>
+                    <a href="#about" class="footer__menu-link">About</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">Support</a>
+                    <a href="#support" class="footer__menu-link">Support</a>
                   </li>
                 </ul>
               </div>
