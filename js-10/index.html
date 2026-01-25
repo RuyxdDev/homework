@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Мой список дел</h1>
+            <p class="subtitle">Организуйте свои задачи</p>
+        </header>
+
+        <main class="main">
+            <form class="form">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        class="input" 
+                        placeholder="Добавить новую задачу..."
+                        autocomplete="off"
+                    >
+                    <button type="submit" class="button-add">Добавить</button>
+                </div>
+            </form>
+
+            <ul class="todos"></ul>
+
+            <div class="empty-state" id="emptyState">
+                <p>Пока нет задач. Добавьте первую!</p>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
